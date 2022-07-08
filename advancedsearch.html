@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced search</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #logofield{
+                position: absolute;
+                top: 3%;
+                left: 1%;
+            }
+
+            .labelfield{
+                min-width: 200px;
+                margin-left: 40px;
+                font-size: 14px;
+            }
+            .AdvancedSearch{
+                width: 100%;
+                display: flex;
+                margin-bottom: 20px;
+            }
+            .AdvancedSearchfield{
+                width: 100%;
+                max-width: 700px;
+                margin-right: 40px;
+                height: 25px;
+            }
+            #ASbutton{
+                box-sizing: border-box;
+                padding: 5px;
+                border-radius: 4px;
+                color: white;
+                background-color: blue;
+                border-color: blue;
+                margin-left: 40px;
+            }
+            #ASbutton:hover{
+                text-decoration: none;
+                box-shadow: rgb(168, 161, 161) 0px 0px 2px 0.5px;
+            }
+            h3{
+                color: #d93025;
+            }
+            h4, h3{
+                margin-left: 40px;
+                font-weight: lighter;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul style="list-style-type: none;">
+            <li><a href="index.html" class="links">Головна</a></li>
+            <li><a onclick="alert('Згоден')" id="putin" href="#" class="links"> Путін хуйло</a></li>
+        </ul>
+        <div id="logofield">
+            <img id="logoimg" width="75" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+        </div>
+        <br>
+        <h3>Розширений пошук</h3>
+        <hr>
+        <form action="https://google.com/search" method="get">
+            <h4>Знайти сторінки що містять...</h4>
+            <div class="AdvancedSearch">
+                <div class="labelfield">
+                    <label for="searchfield1">усі ці слова:</label>
+                </div>
+                <input type="text" value id="searchfield1" class="AdvancedSearchfield" name="as_q">
+            
+            </div>
+            <div class="AdvancedSearch">
+                <div class="labelfield">
+                    <label for="searchfield2">точне слово або фразу:</label>
+                </div>
+                <input type="text" value id="searchfield2" class="AdvancedSearchfield" name="as_epq">
+                
+            </div>
+            <div class="AdvancedSearch">
+                <div class="labelfield">
+                    <label for="searchfield3">будь-яке з цих слів:</label>
+                </div>
+                <input type="text" value id="searchfield3" class="AdvancedSearchfield" name="as_oq">
+                
+            </div>
+            <div class="AdvancedSearch">
+                <div class="labelfield">
+                    <label for="searchfield4" >жодне з цих слів:</label>
+                </div>
+                <input type="text" value id="searchfield4" class="AdvancedSearchfield" name="as_eq">
+                
+            </div>
+            <input type="submit" id="ASbutton" class="links" value="Розширений пошук">
+        </form>
+
+
+    </body>
+</html>
