@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #logofield{
+                height: 100%;
+                margin-top: 20vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 0px;
+               
+            }
+            #logoimg{
+                margin-top: auto;
+                object-position: center bottom;
+                padding-bottom: 30px;
+            }
+        </style>
+        
+    </head>
+    <body >
+        <ul style="list-style-type: none;">
+            <li><a href="imagesearch.html" class="links">Пошук зображень</a></li>
+            <li><a href="advancedsearch.html" class="links">Розширений пошук</a></li>
+            <li><a onclick="alert('Згоден')" id="putin" href="#" class="links"> Путін хуйло</a></li>
+        </ul>
+        <div>
+            <div id="logofield">
+                <img id="logoimg" width="272" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+            </div>
+        <form action="https://google.com/search">                                                                                                                                                   
+            <div class="searchfield">
+                <div class="box">
+                    <img class="lupa" src="img/lupa.png" alt="" width="20px" height="20px"> 
+                    <input class="search" type="text" name="q" placeholder="Шукати в Google...">
+                </div>
+            </div>
+            <br>
+                <div class="buttoncontainer">
+                    <input class="button" type="submit" value="Знайти!">
+                     <input class="button" type="submit" value="Мені пощастить!" name="btnI">
+                </div>
+  
+        </form>
+        </div>
+
+    </body>
+    
+</html>
