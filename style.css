@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links{
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+#putin{
+    background-color: blue;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: white;
+}
+#putin:hover{
+    color: yellow;
+    text-decoration: none;
+    box-shadow: rgb(168, 161, 161) 0px 0px 2px 0.5px;
+}
+.links:hover{
+    text-decoration:underline;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search{
+    width: 35vw;
+    min-width: 440px;
+    height: 40px;
+    border-radius: 23px;
+    font-size: 16px;
+    border:1px thistle solid;
+    margin: 0px;
+    padding-left: 30px;
+    
+}
+
+.search:hover{
+    box-shadow: rgb(168, 161, 161) 0px 0px 2px 0.5px;
+}
+.searchfield{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.box{
+    width: fit-content;
+    position: relative;
+}
+.lupa{
+    position: absolute;
+    left: 1.5%;
+    padding-top: 12px;
+}
+.button{
+    border-radius: 4px;
+    background-color:#f8f9fa ;
+    color: black;
+    border: 1px solid;
+    border-color: white;
+    height: 30px;
+    width: 120px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.button:hover{
+    box-shadow: rgb(168, 161, 161) 0px 0px 2px 0.5px;
+    
+}
+.buttoncontainer{
+    display: flex;
+    justify-content: center;
+}
