@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #logofield{
+                height: 100%;
+                margin-top: 20vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 0px;
+
+            }
+            #logoimg{
+                margin-top: auto;
+                object-position: center bottom;
+                margin-bottom: 20px;
+            }
+            #logofield > div{
+                width: fit-content ;
+                position: relative;
+
+            }
+            #logofield > div > p{
+                position: absolute;
+                bottom: 5%;
+                right: -13%;
+                color: blue;
+            }
+        </style>
+        
+    </head>
+    <body >
+        <ul style="list-style-type: none;">
+            <li><a href="index.html" class="links">Головна</a></li>
+            <li><a onclick="alert('Згоден')" id="putin" href="#" class="links"> Путін хуйло</a></li>
+        </ul>
+
+        <div id="logofield">
+            <div>
+                <img id="logoimg" width="272" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+                <p>Зображення</p>
+            </div>
+        </div>
+        <form action="https://www.google.com/search" method="get" role="search">
+            <div class="searchfield">
+                <div class="box">
+                    <img class="lupa" src="img/lupa.png" alt="" width="20px" height="20px">
+                    <input class="search" type="text" name="q" placeholder="Шукати в Google...">
+                </div>
+            </div>
+            <br>
+            <div class="buttoncontainer">
+                <input class="button" type="submit" value="Знайти!">
+                <input style="visibility: hidden;" type="radio" checked name="tbm" value="isch">
+            </div>
+  
+        </form>
+    </body>
+    
+</html>
